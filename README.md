@@ -50,8 +50,30 @@ The ORF analysis found 206 ORFs, with the longest being 3,441 bp. This demonstra
 
 The results suggest that the Canis lupus genome assembly contains many long sequences, including very long scaffolds. The N50 and L50 values indicate that a large part of the genome is contained in a relatively small number of long scaffolds. The filtering experiment showed that sequences shorter than 10 kb were not present in the assembly, so removing them did not affect the main statistics. The ORF analysis showed that the genome contains regions that may potentially code for proteins, but these regions cannot automatically be considered real genes without additional evidence.
 
-# Galaxy History
+## Screenshots
 
-A screenshot of the Galaxy History showing the analysis steps
+The important Galaxy analysis screenshots are available in the `screenshots/` folder. It include the documentation of the the main steps, including Fasta Statistics, sequence length calculation, filtering, and ORF identification.
+
+### Figure Captions (From Screenshots Folder)
+
+Figure 1. Fasta Statistics results for the Canis lupus genome assembly. The tool was used to summarize the assembly by calculating statistics such as scaffold N50, L50, N90, L90, and the maximum sequence length.
+
+Figure 2. Compute Sequence Length results for the Canis lupus genome assembly. The tool was used to determine the length of each sequence in the FASTA dataset.
+
+Figure 3. Filter Sequences by Length results for the Canis lupus genome assembly. The tool was used to filter the FASTA sequences based on their length and retain sequences meeting the selected minimum length of 10 kb.
+
+Figure 4. Fasta Statistics results after filtering the Canis lupus genome assembly. Sequences shorter than 10 kb were removed using the Filter Sequences by Length tool, and the Fasta Statistics tool was used to examine the resulting assembly.
+
+Figure 5. Filter FASTA results for the ORF analysis. The Filter FASTA tool was used to select the Canis lupus sequence CAJNRB020000009.1, which was 194,203 bp long, from the 82 available sequences. One sequence was retained while 81 sequences were discarded for the ORF analysis.
+
+Figure 6. The getorf tool was used as an ORF-finding tool to identify possible open reading frames (ORFs) in the selected Canis lupus sequence. Using a minimum ORF size of 300 bp, the tool identified 206 ORFs.
+
+Figure 7. Galaxy History showing the complete workflow used for the Canis lupus genome exploration, including Fasta Statistics, Compute Sequence Length, sequence filtering, and getorf analysis.
+
+## Galaxy History
+
+The complete Galaxy analysis history can be accessed here:
+
+[View the shared Galaxy History](https://usegalaxy.org/u/ijanshane17/h/genome-exploration-ii-ijan-species)
 
 
